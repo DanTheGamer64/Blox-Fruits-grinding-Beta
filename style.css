@@ -1,0 +1,375 @@
+body {
+    background-color: #1e2124;
+    font-family: 'Arial', sans-serif; /* A more readable font for general text */
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font for a modern look */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    background-color: #282c34; /* A slightly different background to distinguish the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.feature-section {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    background-color: #282c34; /* Same background to match */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the section */
+    margin-bottom: 50px; /* Space between feature sections */
+}
+
+.feature-image {
+    max-width: 500px; /* Adjust as needed */
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    border-radius: 10px; /* Rounded corners for the image */
+    border: 2px solid #ffcc00; /* Border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+.feature-image:hover {
+    transform: scale(1.05);
+}
+
+.feature-text {
+    flex: 1; /* Allow text container to take up remaining space */
+}
+
+.feature-text h2 {
+    margin-top: 0; /* Remove top margin for heading */
+    color: #ffffff; /* Text color */
+}
+
+.feature-text p {
+    color: #cccccc; /* Text color for paragraph */
+}
+
+.logo {
+    max-width: 500px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+    width: 500px;
+    height: 470px;
+    border-radius: 10px; /* Rounded corners for the image */
+    border: 2px solid #ffcc00; /* Border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for the image */
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.welcome-text {
+    font-size: 32px; /* Larger font size for the heading */
+    margin: 0;
+    margin-bottom: 10px; /* Space below the heading */
+    color: #ffcc00; /* Bright color for the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for the heading */
+}
+
+.description-text {
+    font-size: 18px; /* Adjust as needed */
+    line-height: 1.6; /* Better line height for readability */
+    margin-top: 0;
+    color: #dddddd; /* Slightly lighter color for better contrast */
+}
+span{
+    display: block; /* Ensure it's on a new line */
+    margin-top: 90px; /* Space above the credits text */
+    font-size: 14px; /* Smaller font size for credits */
+    color: #656a70; /* Lighter color for the credits text */
+}
+.logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.welcome-text:hover {
+    color: #ffd700; /* Slightly change the color on hover */
+    transition: color 0.3s ease;
+}
+@media (max-width: 768px) {
+    .feature-section, .container {
+        padding: 15px;
+    }
+
+    .feature-image, .logo {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1e2124;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+    color: #1e2124;
+}
+.extra-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #aaaaaa; /* Lighter color for the extra info */
+    font-style: italic; /* Italic style to differentiate it */
+    text-align: center; /* Center align if needed */
+}
+.container, .feature-section {
+    background: linear-gradient(135deg, #282c34 0%, #2b2f36 100%);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.cta-button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+.feature-image, .logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-image:hover, .logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container, .feature-section, .footer {
+    animation: fadeIn 1s ease-in-out;
+}
+.container, .feature-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover, .feature-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+body {
+    letter-spacing: 0.5px;
+}
+
+.feature-text h2 {
+    font-size: 24px; /* Slightly larger heading */
+    line-height: 1.4;
+}
+
+.feature-text p {
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.8;
+}
+
+.cta-button {
+    font-size: 16px; /* Adjust button font size */
+    letter-spacing: 0.5px;
+}
+.feature-image {
+    border: 2px solid #444;
+}
+
+.feature-image:hover {
+    border-color: #ffcc00;
+}
+
+.logo {
+    border: 2px solid #444;
+}
+
+.logo:hover {
+    border-color: #ffcc00;
+}
+.cta-button, .feature-image, .logo {
+    cursor: pointer;
+}
+.container {
+    padding: 20px;
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Set a max-width */
+}
+
+.feature-text {
+    margin: 0 10px; /* Adjust margin for better alignment */
+}
+
+.footer {
+    padding: 10px;
+    font-size: 14px; /* Smaller font size for the footer */
+}
+.footer {
+    background-color: #1e2124;
+    color: #656a70;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+.footer {
+    background-color: #1e2124;
+    color: #656a70;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    position: relative; /* Ensure it doesn’t overlap other content */
+}
+.faq {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    color: #ffcc00;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    color: #dddddd;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #1e2124;
+    padding: 10px;
+    z-index: 1000;
+}
+.clear {
+    clear: both;
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+}
+.feature-section, .community-spotlight, .faq, .blog {
+    margin-bottom: 40px; /* Adjust as necessary */
+}
+.feature-section {
+    padding-top: 20px; /* Add padding to the top to prevent collision */
+}
+.container {
+    margin-bottom: 40px; /* Increase the margin to create more space */
+}
+html {
+    scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out;
+}
+.feature-image:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffd700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e2124; /* Match your background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffcc00; /* Scrollbar color */
+    border-radius: 10px;
+    border: 3px solid #1e2124; /* Adds padding around the scrollbar */
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #ffcc00, #ff8c00);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.divider {
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 40px 0;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
